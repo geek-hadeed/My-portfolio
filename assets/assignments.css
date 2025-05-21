@@ -1,0 +1,83 @@
+/* Assignments Section Styles */
+.assignments-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.assignment-card {
+  background-color: var(--container-color);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.assignment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.assignment-card a {
+  display: block;
+  padding: 1rem;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  text-align: center;
+  transition: color 0.3s;
+}
+
+.assignment-card a:hover {
+  color: var(--first-color);
+}
+
+.assignments-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.assignments-pagination-bullet {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--text-color-light);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.assignments-pagination-bullet.active {
+  background-color: var(--first-color);
+  width: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .assignments-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .assignments-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .assignment-card img {
+    height: 120px;
+  }
+  
+  .assignment-card a {
+    padding: 0.75rem;
+    font-size: var(--small-font-size);
+  }
+}
