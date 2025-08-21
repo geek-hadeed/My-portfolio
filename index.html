@@ -183,12 +183,12 @@
     <!-- Qualification Section -->
     <section id="qualification" class="qualification section">
       <div class="container">
-        <h2 class="section-title">Qualification</h2>
-        <span class="section-subtitle">My personal journey</span>
+      <h2 class="section-title">Qualification</h2>
+      <span class="section-subtitle">My personal journey</span>
 
-        <div class="qualification-container">
-          <div class="qualification-tabs">
-            <div class="qualification-button active" data-target="education">
+      <div class="qualification-container">
+        <div class="qualification-tabs">
+        <button class="qualification-button active" data-target="education"></button>
               <i class="fas fa-graduation-cap"></i> Education
             </div>
           </div>
@@ -246,6 +246,26 @@
                 </div>
                 <div>
                   <span class="qualification-rounder"></span>
+                  
+                  <span class="qualification-line"></span>
+                </div>
+              </div>
+
+              <!-- Qualification 4 -->
+              <div class="qualification-data">
+                <div></div>
+                <div>
+                  <span class="qualification-rounder"></span>
+                </div>
+                <div class="qualification-info">
+                  <h3 class="qualification-title">BS Data Science</h3>
+                  <span class="qualification-subtitle">VU</span>
+                  <div class="qualification-calendar">
+                    <i class="fas fa-calendar-alt"></i> 2025 - 2029
+                  </div>
+                  <button class="qualification-button-more" data-modal="modal-4">
+                    View More <i class="fas fa-arrow-right"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -292,6 +312,26 @@
           </ul>
         </div>
       </div>
+
+      <div class="modal" id="modal-4">
+        <div class="modal-content">
+          <h4 class="modal-title">University Summary:</h4>
+          <span class="modal-close"><i class="fas fa-times"></i></span>
+          <ul class="modal-list">
+            <li><i class="fas fa-check-circle"></i> Currently pursuing BS Data Science from Virtual University of
+              Pakistan.</li>
+            <li><i class="fas fa-check-circle"></i> Completed core courses like Programming Fundamentals, Discrete
+              Mathematics, and Introduction to Statistics.</li>
+            <li><i class="fas fa-check-circle"></i> Studying advanced subjects like Data Structures, Algorithms, Machine
+              Learning, and Big Data Analytics.</li>
+            <li><i class="fas fa-check-circle"></i> Gained hands-on experience in Python, R, and SQL through coursework.
+            </li>
+            <li><i class="fas fa-check-circle"></i> Working on real-time projects involving data visualization and
+              predictive analytics.</li>
+          </ul>
+        </div>
+      </div>
+
     </section>
 
     <!-- Projects Section -->
@@ -299,72 +339,72 @@
       <div class="container">
         <h2 class="section-title">Projects</h2>
         <span class="section-subtitle">Most recent work</span>
-        
+
         <div class="projects-container" id="projects-container">
-            <!-- Projects will be dynamically loaded here -->
+          <!-- Projects will be dynamically loaded here -->
         </div>
-        
+
         <div class="projects-pagination" id="projects-pagination">
-            <!-- Pagination will be dynamically generated -->
+          <!-- Pagination will be dynamically generated -->
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
     <!-- Only the contact section part that needs fixing -->
-<section id="contact" class="contact section">
-  <div class="container">
-    <h2 class="section-title">Contact Me</h2>
-    <span class="section-subtitle">Get in touch</span>
+    <section id="contact" class="contact section">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <span class="section-subtitle">Get in touch</span>
 
-    <div class="contact-container">
-      <div class="contact-info">
-        <div class="contact-card">
-          <i class="fas fa-phone contact-icon"></i>
-          <h3 class="contact-title">Phone</h3>
-          <span class="contact-data">+923322965814</span>
-        </div>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-card">
+              <i class="fas fa-phone contact-icon"></i>
+              <h3 class="contact-title">Phone</h3>
+              <span class="contact-data">+923322965814</span>
+            </div>
 
-        <div class="contact-card">
-          <i class="fas fa-envelope contact-icon"></i>
-          <h3 class="contact-title">Email</h3>
-          <span class="contact-data">programmerhadeed@gmail.com</span>
-        </div>
+            <div class="contact-card">
+              <i class="fas fa-envelope contact-icon"></i>
+              <h3 class="contact-title">Email</h3>
+              <span class="contact-data">programmerhadeed@gmail.com</span>
+            </div>
 
-        <div class="contact-card">
-          <i class="fas fa-map-marker-alt contact-icon"></i>
-          <h3 class="contact-title">Location</h3>
-          <span class="contact-data">Karachi, Pakistan</span>
+            <div class="contact-card">
+              <i class="fas fa-map-marker-alt contact-icon"></i>
+              <h3 class="contact-title">Location</h3>
+              <span class="contact-data">Karachi, Pakistan</span>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <div class="contact-inputs">
+              <div class="contact-content">
+                <label for="name" class="contact-label">Name</label>
+                <input type="text" id="name" class="contact-input" placeholder=" ">
+              </div>
+
+              <div class="contact-content">
+                <label for="email" class="contact-label">Email</label>
+                <input type="email" id="email" class="contact-input" placeholder=" ">
+              </div>
+            </div>
+
+            <div class="contact-content textarea">
+              <label for="message" class="contact-label">Message</label>
+              <textarea id="message" cols="0" rows="7" class="contact-input" placeholder=" "></textarea>
+            </div>
+
+            <div>
+              <a href="mailto:programmerhadeed@gmail.com" class="btn">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </a>
+            </div>
+          </form>
         </div>
       </div>
-
-      <form class="contact-form">
-        <div class="contact-inputs">
-          <div class="contact-content">
-            <label for="name" class="contact-label">Name</label>
-            <input type="text" id="name" class="contact-input" placeholder=" ">
-          </div>
-
-          <div class="contact-content">
-            <label for="email" class="contact-label">Email</label>
-            <input type="email" id="email" class="contact-input" placeholder=" ">
-          </div>
-        </div>
-
-        <div class="contact-content textarea">
-          <label for="message" class="contact-label">Message</label>
-          <textarea id="message" cols="0" rows="7" class="contact-input" placeholder=" "></textarea>
-        </div>
-
-        <div>
-          <a href="mailto:programmerhadeed@gmail.com" class="btn">
-            Send Message <i class="fas fa-paper-plane"></i>
-          </a>
-        </div>
-      </form>
-    </div>
-  </div>
-</section>
+    </section>
   </main>
 
   <!-- Footer -->
